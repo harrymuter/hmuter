@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
       <div className="footer">
         <div className="footer-container">
           <div className="footer-col">
-            © {new Date().getFullYear()}, Harry Muter
+            © {new Date().getFullYear()} - Harry Muter
           </div>
           <div className="footer-col">
             <ul className="footer-list icons">
