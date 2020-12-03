@@ -29,6 +29,10 @@
   font-size: 1.2em;
 }
 
+.icons a {
+  padding: 15px;
+}
+
 .right {
   text-align: right;
 }

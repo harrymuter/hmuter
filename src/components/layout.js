@@ -36,28 +36,20 @@ const Layout = ({ children }) => {
             © {new Date().getFullYear()} - Harry Muter
           </div>
           <div className="footer-col">
-            <ul className="footer-list icons">
-              <li>
-                <a href="https://www.linkedin.com/in/harry-muter-675ab86b/">
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/harrymuter">
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/harrymuter">
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-              </li>
-              <li>
-                <a href="https://people.uea.ac.uk/h_muter">
-                  <FontAwesomeIcon icon={faUserGraduate} />
-                </a>
-              </li>
-            </ul>
+            <div className="footer-list icons">
+              <a href="https://www.linkedin.com/in/harry-muter-675ab86b/">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a href="https://twitter.com/harrymuter">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+              <a href="https://github.com/harrymuter">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a href="https://people.uea.ac.uk/h_muter">
+                <FontAwesomeIcon icon={faUserGraduate} />
+              </a>
+            </div>
           </div>
           <div className="footer-col right icons">
             <a href="mailto:h.muter@uea.ac.uk">

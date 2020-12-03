@@ -116,15 +116,15 @@
 }
 
 .show-sidebar {
-  animation: fadeIn ease 0.4s forwards;
-  -webkit-animation: fadeIn ease 0.4s forwards;
-  -moz-animation: fadeIn ease 0.4s forwards;
-  -o-animation: fadeIn ease 0.4s forwards;
-  -ms-animation: fadeIn ease 0.4s forwards;
+  animation: fadeIn reappear ease 0.2s forwards;
+  -webkit-animation: fadeIn ease 0.2s forwards;
+  -moz-animation: fadeIn ease 0.2s forwards;
+  -o-animation: fadeIn ease 0.2s forwards;
+  -ms-animation: fadeIn ease 0.2s forwards;
 }
 
 .hide-sidebar {
-  animation: fadeOut ease 0.4s forwards;
+  animation: fadeOut disappear ease 0.2s forwards;
   -webkit-animation: fadeOut ease 0.4s forwards;
   -moz-animation: fadeOut ease 0.4s forwards;
   -o-animation: fadeOut ease 0.4s forwards;
@@ -137,6 +137,7 @@
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -146,6 +147,7 @@
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -155,6 +157,7 @@
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -164,6 +167,7 @@
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -173,6 +177,7 @@
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -182,6 +187,7 @@
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -191,6 +197,7 @@
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -200,6 +207,7 @@
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -209,14 +217,16 @@
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 
 @-ms-keyframes fadeOut {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
+    visibility: hidden;
   }
 }
