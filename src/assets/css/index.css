@@ -125,8 +125,8 @@
 
 .hide-sidebar {
   animation: fadeOut disappear ease 0.2s forwards;
-  -webkit-animation: fadeOut ease 0.4s forwards;
-  -moz-animation: fadeOut ease 0.4s forwards;
+  -webkit-animation: fadeOut ease 0.2s forwards;
+  -moz-animation: fadeOut ease 0.2s forwards;
   -o-animation: fadeOut ease 0.4s forwards;
   -ms-animation: fadeOut ease 0.4s forwards;
 }
