@@ -18,7 +18,6 @@ export default () => {
   const sidebar = useRef()
 
   const handleScroll = () => {
-    console.log(breakpoint.current.getBoundingClientRect().y)
     if (breakpoint.current.getBoundingClientRect().y < 0) {
       if (sidebar.current.classList.contains("hide-sidebar")) {
         sidebar.current.classList.remove("hide-sidebar")
