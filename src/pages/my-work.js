@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import Diss from "../components/dissertation"
-import essay from "../assets/docs/ethicsOfDataMining.pdf"
-import dissertation from "../assets/docs/dissertation.pdf"
+import essay from "https://harrymuter.s3.eu-west-2.amazonaws.com/ethicsOfDataMining.pdf"
+import dissertation from "https://harrymuter.s3.eu-west-2.amazonaws.com/dissertation.pdf"
 import "../assets/css/work.css"
 
 export default ({ data }) => {

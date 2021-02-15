@@ -41,13 +41,11 @@ export default ({ data }) => {
         products within the United Kingdom and Channel Islands.
         <br />
         <br />
-        After gaining two years of industry experience I wanted to move into
-        research and academia so I applied for several doctoral opportunites,
-        and from these applications I was offered positions at both UEA and
-        King's College London. I decided that the programme at UEA would allow
-        me to more effectively apply my practical knowledge of Business and Data
-        Science, so accepted the offer and began studies in October 2020, and I
-        am now based at the Norwich Business School.
+        After two years of industry experience I wanted to move into research
+        and academia so I applied for a doctoral studentship at UEA (within the
+        Norwich Business School) gaining a role on their Graduate Teaching
+        Assistant scheme. The programme at UEA allows me to more apply my
+        practical knowledge of Business and Data Science.
       </p>
       <h2>Research</h2>
       <p>
