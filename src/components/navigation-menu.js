@@ -11,9 +11,7 @@ export default () => {
       <div className="navigation-inner">
         <div className="menu-branding">
           <Link to="/">
-            <div className="navigation-logo">
-              <span className="strike">William</span> Harry Muter
-            </div>
+            <div className="navigation-logo">Harry Muter</div>
           </Link>
         </div>
 
