@@ -51,8 +51,7 @@ export default ({ data }) => {
       <p>
         My research primarily focuses on the applications of big data techniques
         to improve performance measurments within service sector organisations,
-        and am particularly interested imeasuring the attainment of software
-        development teams.
+        and am particularly interested in healthcare organisations.
         <br />
         <br />
         If you are interested in learning more about my research then please
