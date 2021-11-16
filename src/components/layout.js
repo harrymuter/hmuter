@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
             </div>
           </div>
           <div className="footer-col right icons">
-            <a href="mailto:h.muter@uea.ac.uk">
+            <a href="mailto:harry.muter95@gmail.com">
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </div>

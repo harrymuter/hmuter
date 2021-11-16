@@ -33,10 +33,6 @@ export default ({ data }) => {
               </p>
             </div>
           </div>
-          <div className="accordion">
-            <div class="accordion-header">Doctoral</div>
-            <div className="accordion-body"></div>
-          </div>
         </div>
       </div>
       <h2>Professional Portfolio</h2>
@@ -46,7 +42,7 @@ export default ({ data }) => {
         Applications. We build web applications for local businesses using{" "}
         <a href="https://reactjs.org/">ReactJS</a> and Wordpress. Again, if you
         would like to know more about the work on this website then{" "}
-        <a href="mailto:h.muter@uea.ac.uk">get in contact</a>.
+        <a href="mailto:harry.muter95@gmail.com">get in contact</a>.
       </p>
       <div className="content">
         <div className="accordion">
