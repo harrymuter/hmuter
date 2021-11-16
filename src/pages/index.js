@@ -10,6 +10,7 @@ import Layout from "../components/layout"
 import ImageOfHarry from "../components/imageOfHarry"
 import Aviva from "../components/aviva"
 import UEA from "../components/uea"
+import CUP from "../components/cup"
 import "../assets/css/app.css"
 import "../assets/css/index.css"
 
@@ -48,8 +49,9 @@ export default () => {
         <div className="info-container">
           <h1>Welcome</h1>
           <p>
-            Hi there! My name is Harry Muter and I am a Postgraduate Researcher
-            / PhD candidate at the Norwich Business School, located within the{" "}
+            Hi there! My name is Harry Muter and I am a Technical Product
+            Analyst / PhD candidate at the Norwich Business School, located
+            within the{" "}
             <a href="https://www.uea.ac.uk" target="_new">
               University of East Anglia
             </a>
@@ -126,6 +128,47 @@ export default () => {
         </div>
         <div className="section">
           <div className="section-title">
+            <h2>Employment</h2>
+          </div>
+          <div className="row">
+            <div className="col">
+              <CUP />
+            </div>
+            <div className="col lg">
+              <h3>Technical Product Analyst</h3>
+              <h4>2021 - Present</h4>
+              <p>
+                I left my PhD programme after gaining a role as a Technical
+                Product Analyst at Cambridge University Press and Assessment. I
+                am very excited to be working at a firm with such a rich history
+                and a great mission and ethos. Whilst here I hope to further
+                extend my project management capabilities and gain valuable
+                industry experience.
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
+              <Aviva />
+            </div>
+            <div className="col lg">
+              <h3>ProductWriter Developer</h3>
+              <h4>2018 - 2020</h4>
+              <p>
+                Upon finishing my Master’s degree I gained a position as a
+                developer at the insurance firm Aviva. The team I was part of is
+                responsible for Aviva’s commercial rating algorithms, which
+                manages both underwriting risk acceptance and the pricing of
+                insurance policies. Whilst there I learnt the nuances of working
+                within a global organisation, and gained experience with
+                large-scale unit and integration testing. I left Aviva in
+                September 2020 to pursue my PhD in Business &amp; Management.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="section">
+          <div className="section-title">
             <h2>Education</h2>
           </div>
           <div className="row">
@@ -134,15 +177,14 @@ export default () => {
             </div>
             <div className="col lg">
               <h3>PhD - Business and Management</h3>
-              <h4>2020 - Present</h4>
+              <h4>2020 - 2021</h4>
               <p className="line-separation">
                 In 2020, I began studying toward a PhD in Business &amp;
                 Management at the University of East Anglia, with a focus on the
                 applicaiton of big data for performance management in service
-                organisations. I was particularly drawn to this doctorate as it
-                is part of a Graduate Teaching Assistant programme, which will
-                allow me to develop my research and teaching skills,
-                particularly within a Higher Education setting.
+                organisations. Although I very much enjoyed my time here, I left
+                in 2021 after deciding to continue pursuing a career in
+                industry.
               </p>
               <h3>MSc - Knowledge Discovery and Datamining</h3>
               <h4>2017 - 2018</h4>
@@ -165,30 +207,6 @@ export default () => {
                 there was a good mixture of theoretical and practical elements.
                 I graduated from this course in July 2017 with First Class
                 Honours.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="section">
-          <div className="section-title">
-            <h2>Employment</h2>
-          </div>
-          <div className="row">
-            <div className="col">
-              <Aviva />
-            </div>
-            <div className="col lg">
-              <h3>ProductWriter Developer</h3>
-              <h4>2018 - 2020</h4>
-              <p>
-                Upon finishing my Master’s degree I gained a position as a
-                developer at the insurance firm Aviva. The team I was part of is
-                responsible for Aviva’s commercial rating algorithms, which
-                manages both underwriting risk acceptance and the pricing of
-                insurance policies. Whilst there I learnt the nuances of working
-                within a global organisation, and gained experience with
-                large-scale unit and integration testing. I left Aviva in
-                September 2020 to pursue my PhD in Business &amp; Management.
               </p>
             </div>
           </div>
