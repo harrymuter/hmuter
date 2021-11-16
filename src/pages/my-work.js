@@ -16,10 +16,6 @@ export default ({ data }) => {
       <p>
         Please find below a few examples of the academic work I have completed
         during my postgraduate studies whilst at the University of East Anglia.
-        I will continue to add pieces as and when I complete them, so make sure
-        to check back in the future for more work! If you have any questions
-        then don't hesitate to{" "}
-        <a href="mailto:h.muter@uea.ac.uk">get in touch.</a>
       </p>
       <div className="academic">
         <div className="academic-image">

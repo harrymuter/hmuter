@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Harry Muter | PhD Researcher`,
-    description: `Hi, I'm Harry Muter and this is my personal website for sharing my thoughts, experiences and work. All views are my own.`,
+    title: `Harry Muter`,
+    description: `I'm Harry Muter and this is my personal website for sharing my thoughts, experiences and work. All views are my own.`,
     author: `Harry Muter`,
   },
   plugins: [

@@ -49,38 +49,6 @@ export default () => {
         <div className="info-container">
           <h1>Welcome</h1>
           <p>
-            Hi there! My name is Harry Muter and I am a Technical Product
-            Analyst / PhD candidate at the Norwich Business School, located
-            within the{" "}
-            <a href="https://www.uea.ac.uk" target="_new">
-              University of East Anglia
-            </a>
-            . The focus of my research is on the uses of{" "}
-            <a href="https://en.wikipedia.org/wiki/Big_data">big data</a> for{" "}
-            <a href="https://en.wikipedia.org/wiki/Performance_measurement">
-              performance measurement
-            </a>{" "}
-            within{" "}
-            <a href="https://en.wikipedia.org/wiki/Tertiary_sector_of_the_economy">
-              service organisations
-            </a>
-            . My work sits within the{" "}
-            <a
-              href="https://www.uea.ac.uk/web/groups-and-centres/accounting-group"
-              target="_new"
-            >
-              Accounting
-            </a>{" "}
-            and the{" "}
-            <a
-              href="https://www.uea.ac.uk/web/groups-and-centres/innovation-technology-and-operations-management-group"
-              target="_new"
-            >
-              Information, Technology, and Operations Management (ITOM)
-            </a>{" "}
-            groups.
-          </p>
-          <p>
             On this website you will find information regarding my backgorund
             and experience, in addition to some of the projects I have been / am
             involved with. If you are interested in learning more about my
@@ -138,12 +106,12 @@ export default () => {
               <h3>Technical Product Analyst</h3>
               <h4>2021 - Present</h4>
               <p>
-                I left my PhD programme after gaining a role as a Technical
-                Product Analyst at Cambridge University Press and Assessment. I
-                am very excited to be working at a firm with such a rich history
-                and a great mission and ethos. Whilst here I hope to further
-                extend my project management capabilities and gain valuable
-                industry experience.
+                I left my PhD programme in 2021 after gaining a role as a
+                Technical Product Analyst at Cambridge University Press and
+                Assessment. I am very excited to be working at a firm with such
+                a rich history and a great mission and ethos. Whilst here I hope
+                to further extend my project management capabilities and gain
+                valuable industry experience.
               </p>
             </div>
           </div>
