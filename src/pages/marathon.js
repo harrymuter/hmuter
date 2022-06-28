@@ -11,7 +11,7 @@ export default ({ data }) => {
       <h2>Donations</h2>
       <p>Donation options coming soon!</p>
       <h2>Training Plan</h2>
-      <p>Training plan coming soon!</p>
+      <p>Training plan coming soon!!</p>
     </Layout>
   )
 }
