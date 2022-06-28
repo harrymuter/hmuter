@@ -23,7 +23,7 @@ export default ({ data }) => {
         </div>
         <div className="content">
           <div className="accordion">
-            <div class="accordion-header">Master's</div>
+            <div className="accordion-header">Master's</div>
             <div className="accordion-body">
               <p>
                 <a href={essay}>Data Mining Ethics Essay</a>
@@ -46,7 +46,7 @@ export default ({ data }) => {
       </p>
       <div className="content">
         <div className="accordion">
-          <div class="accordion-header">Epic Applications</div>
+          <div className="accordion-header">Epic Applications</div>
           <div className="accordion-body">
             <p>
               <a href="https://www.epicdev.co.uk">Epic Dev</a>

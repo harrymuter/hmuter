@@ -3,6 +3,7 @@
     "name": "Home",
     "url": "/"
   },
+  { "name": "Marathon", "url": "/marathon/" },
   { "name": "About Me", "url": "/about-me/" },
   { "name": "My Work", "url": "/my-work/" },
   {

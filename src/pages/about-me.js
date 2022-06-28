@@ -46,14 +46,18 @@ export default ({ data }) => {
         Norwich Business School) gaining a role on their Graduate Teaching
         Assistant scheme. Although I very much enjoyed my time on this
         programme, I left in November 2021 after deciding to transition back
-        into industry to pursue a career.
+        into industry to pursue a career. I am currently working at{" "}
+        <a href="https://www.cambridge.org/">
+          Cambridge University Press &amp; Assessment
+        </a>{" "}
+        as a Technical Product Analyst.
       </p>
       <h2>Interests</h2>
       <p>
         Outside of work I enjoy both watching and participating in sports - I
         play for a local rugby team, will be{" "}
         <a href="https://uk.virginmoneygiving.com/fundraiser-display/showROFundraiserPage?userUrl=HarryMuter&pageUrl=1">
-          running the 2021 London Marathon
+          running the 2022 London Marathon
         </a>
         , and am a fan of Norwich City Football Club.
         <div className="interests">
