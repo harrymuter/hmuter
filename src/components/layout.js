@@ -5,7 +5,7 @@ import {
   faTwitter,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons"
-import { faUserGraduate, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div class="outer-container">
+      <div className="outer-container">
         <main>{children}</main>
       </div>
       <div className="footer">
@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
           </div>
           <div className="footer-col">
             <div className="footer-list icons">
-              <a href="https://www.linkedin.com/in/harry-muter-675ab86b/">
+              <a href="https://www.linkedin.com/in/muter/">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a href="https://twitter.com/harrymuter">
@@ -46,13 +46,10 @@ const Layout = ({ children }) => {
               <a href="https://github.com/harrymuter">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
-              <a href="https://people.uea.ac.uk/h_muter">
-                <FontAwesomeIcon icon={faUserGraduate} />
-              </a>
             </div>
           </div>
           <div className="footer-col right icons">
-            <a href="mailto:h.muter@uea.ac.uk">
+            <a href="mailto:harry.muter95@gmail.com">
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </div>

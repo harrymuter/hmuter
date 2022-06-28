@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Harry Muter | PhD Researcher | UEA`,
-    description: `A personal webiste for sharing my thoughts, experiences and work. All views are my own. This website is not associated to the University of East Anglia.`,
+    title: `Harry Muter`,
+    description: `I'm Harry Muter and this is my personal website for sharing my thoughts, experiences and work. All views are my own.`,
     author: `Harry Muter`,
   },
   plugins: [

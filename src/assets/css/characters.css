@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Signika+Negative&display=swap");
+
+.navigation-logo {
+  overflow: hidden;
+}
+
+.menu-branding::before {
+  content: "";
+  position: absolute;
+  bottom: calc(2em - 10px);
+  width: 0px;
+  height: 7px;
+  transform: skew(-12deg);
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 0;
+}
+
+.menu-branding.active::before {
+  width: 220px;
+  transition: width 1.2s ease;
+}
+
+.character {
+  opacity: 0;
+  font-family: "Permanent Marker", cursive;
+}
+
+.character.active {
+  opacity: 1;
+  transition: opacity 1.2s ease;
+}

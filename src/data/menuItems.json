@@ -3,11 +3,12 @@
     "name": "Home",
     "url": "/"
   },
+  { "name": "Marathon", "url": "/marathon/" },
   { "name": "About Me", "url": "/about-me/" },
   { "name": "My Work", "url": "/my-work/" },
   {
     "name": "Contact Me",
     "url": "",
-    "url2": "mailto:h.muter@uea.ac.uk"
+    "url2": "mailto:harry.muter95@gmail.com"
   }
 ]

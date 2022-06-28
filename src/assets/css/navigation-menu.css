@@ -1,11 +1,17 @@
 .navbar {
   background-color: #005088;
-  position: relative;
 }
 
 .navigation-inner {
   margin: auto;
   max-width: 1000px;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-basis: auto;
+  flex-wrap: wrap;
 }
 .nav-link {
   position: relative;
@@ -15,7 +21,6 @@
 }
 
 .navigation-logo {
-  max-width: 100%;
   line-height: 3.2rem;
   font-size: 2rem;
   max-height: 3.2rem;
@@ -44,9 +49,8 @@
 }
 
 .nav-item {
-  display: inline-block;
-  padding: 1em 1em 1em 4rem;
-  width: 100%;
+  display: flex;
+  padding: 1em;
 }
 
 .nav-link.active:after {
@@ -54,11 +58,6 @@
   color: #bbbbbb;
   left: 0;
   background: #ffffff;
-}
-
-.menu-branding {
-  display: inline-block;
-  margin-left: 10%;
 }
 
 @keyframes rotation {
@@ -70,46 +69,59 @@
   }
 }
 .nav-items {
-  max-width: 1200px;
-  margin: auto;
-  max-height: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
 }
-.nav-items.open {
-  max-height: 368px;
-  display: block;
-  visibility: visible;
-  width: 100%;
-  padding-bottom: 1em;
-  z-index: 999;
-}
+
 .menu-toggle {
-  height: 100%;
-  display: inline-block;
-  width: 15%;
-  vertical-align: middle;
-  padding: 1em;
+  display: none;
 }
+
+/* MOBILE */
+@media only screen and (max-width: 800px) {
+  .navbar {
+    width: fit-content;
+  }
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+  }
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    flex-basis: 100%;
+    /* display: none; */
+  }
+  .nav-items.open {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    overflow: hidden;
+    /* display: visible; */
+    max-height: 100vh;
+    transition: max-height 0.3s ease-out;
+  }
+}
+
 .menu-branding {
-  padding: 1.2em 0 1.2em 1em;
-  margin: 0 0 0 0;
-  min-width: 85%;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link {
-  font-size: 1.2em;
+  font-size: 1em;
   text-decoration: none;
   color: #bcbcbc;
 }
 
-.nav-link:hover {
-  font-size: 1.2em;
-}
-
 .nav-link.active {
-  font-size: 1.2em;
   color: #ffffff;
 }
 

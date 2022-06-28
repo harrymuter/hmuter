@@ -13,13 +13,13 @@ export default ({ data }) => {
       <h1>About Me</h1>
       <h2>Background</h2>
       <p>
-        I was born in August 1995 in East London, where I lived until my family
-        relocated to Norwich in 2004. After moving to Norfolk, I was educated at
-        Town Close House and then at Langley School, which is where my interest
-        in technology and computing began. For my A-Levels I selected a wide
-        range of subjects, studying Mathematics, Business Studies and
-        Photography. After finishing school I enrolled to study Business
-        Information Systems at the University of East Anglia (UEA) in 2014.
+        I was born in East London, where I lived until my family relocated to
+        Norwich in 2004. After moving to Norfolk, I was educated at Town Close
+        House and then at Langley School, which is where my interest in
+        technology and computing began. For my A-Levels I selected a wide range
+        of subjects, studying Mathematics, Business Studies and Photography.
+        After finishing school I enrolled to study Business Information Systems
+        at the University of East Anglia (UEA) in 2014.
         <br />
         <br />
         I was drawn to my undergraduate course due to its interdisciplinary
@@ -44,27 +44,20 @@ export default ({ data }) => {
         After two years of industry experience I wanted to move into research
         and academia so I applied for a doctoral studentship at UEA (within the
         Norwich Business School) gaining a role on their Graduate Teaching
-        Assistant scheme. The programme at UEA allows me to more apply my
-        practical knowledge of Business and Data Science.
-      </p>
-      <h2>Research</h2>
-      <p>
-        My research primarily focuses on the applications of big data techniques
-        to improve performance measurments within service sector organisations,
-        and am particularly interested imeasuring the attainment of software
-        development teams.
-        <br />
-        <br />
-        If you are interested in learning more about my research then please
-        feel free to get in contact with me{" "}
-        <a href="mailto:h.muter@uea.ac.uk">here</a>.
+        Assistant scheme. Although I very much enjoyed my time on this
+        programme, I left in November 2021 after deciding to transition back
+        into industry to pursue a career. I am currently working at{" "}
+        <a href="https://www.cambridge.org/">
+          Cambridge University Press &amp; Assessment
+        </a>{" "}
+        as a Technical Product Analyst.
       </p>
       <h2>Interests</h2>
       <p>
         Outside of work I enjoy both watching and participating in sports - I
         play for a local rugby team, will be{" "}
         <a href="https://uk.virginmoneygiving.com/fundraiser-display/showROFundraiserPage?userUrl=HarryMuter&pageUrl=1">
-          running the 2021 London Marathon
+          running the 2022 London Marathon
         </a>
         , and am a fan of Norwich City Football Club.
         <div className="interests">
