@@ -6,9 +6,12 @@ import john from "../assets/images/john.gif"
 export default ({ data }) => {
   return (
     <Layout>
-      <h1>404 error - page not found</h1>
-      <div className="fzf-subheading">
-        <p>It looks like you might be lost. Try another page.</p>
+      <h1 className="page-title">Well this is awkward...</h1>
+      <div className="section">
+        <h2 className="section-title">404 error - page not found</h2>
+        <div className="fzf-subheading">
+          <p>It looks like you might be lost. Try another page.</p>
+        </div>
       </div>
       <div className="fzf-image">
         <img src={john} alt="Lost John Travolta" />
