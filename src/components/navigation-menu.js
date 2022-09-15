@@ -3,72 +3,17 @@ import "../assets/css/navigation-menu.css"
 import "../assets/css/characters.css"
 import menuItems from "../data/menuItems.json"
 import { Link } from "gatsby"
+import logo from "../assets/images/logo.svg"
 
-export default ({ firstRender }) => {
-  const [active1, setActive1] = useState(firstRender)
-  const [active2, setActive2] = useState(firstRender)
-  const [active3, setActive3] = useState(firstRender)
-  const [active4, setActive4] = useState(firstRender)
-  const [active5, setActive5] = useState(firstRender)
-  const [active6, setActive6] = useState(firstRender)
-  const [active7, setActive7] = useState(firstRender)
-  const [active8, setActive8] = useState(firstRender)
-  const [active9, setActive9] = useState(firstRender)
-  const [active10, setActive10] = useState(firstRender)
-  const [active11, setActive11] = useState(firstRender)
+export default () => {
   const [menuOpen, toggleMenu] = useState(false)
   const [subItem, toggleSubItem] = useState(null)
-  setTimeout(() => {
-    setActive1(true)
-  }, 300)
-  setTimeout(() => {
-    setActive2(true)
-  }, 600)
-  setTimeout(() => {
-    setActive3(true)
-  }, 900)
-  setTimeout(() => {
-    setActive4(true)
-  }, 1200)
-  setTimeout(() => {
-    setActive5(true)
-  }, 1500)
-  setTimeout(() => {
-    setActive6(true)
-  }, 1500)
-  setTimeout(() => {
-    setActive7(true)
-  }, 2100)
-  setTimeout(() => {
-    setActive8(true)
-  }, 2400)
-  setTimeout(() => {
-    setActive9(true)
-  }, 2700)
-  setTimeout(() => {
-    setActive10(true)
-  }, 3000)
-  setTimeout(() => {
-    setActive11(true)
-  }, 3300)
   return (
     <div className="navbar">
       <div className="navigation-inner">
-        <div className={`menu-branding${active11 ? " active" : ""}`}>
+        <div className="menu-branding">
           <Link to="/">
-            <div className={`navigation-logo`}>
-              <span className={`character${active1 ? " active" : ""}`}>H</span>
-              <span className={`character${active2 ? " active" : ""}`}>a</span>
-              <span className={`character${active3 ? " active" : ""}`}>r</span>
-              <span className={`character${active4 ? " active" : ""}`}>r</span>
-              <span className={`character${active5 ? " active" : ""}`}>y</span>
-              <span className={`character${active6 ? " active" : ""}`}> </span>
-              <span className={`character${active7 ? " active" : ""}`}>M</span>
-              <span className={`character${active8 ? " active" : ""}`}>u</span>
-              <span className={`character${active9 ? " active" : ""}`}>t</span>
-              <span className={`character${active10 ? " active" : ""}`}>e</span>
-              <span className={`character${active11 ? " active" : ""}`}>r</span>
-            </div>
+            <img className={`navigation-logo`} src={logo} />
           </Link>
         </div>
 
