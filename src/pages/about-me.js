@@ -9,9 +9,9 @@ import "../assets/css/about.css"
 export default ({ data }) => {
   return (
     <Layout>
+      <h1 className="page-title">About Me</h1>
       <div className="section">
-        <h1>About Me</h1>
-        <h2>Background</h2>
+        <h2 className="section-title">Background</h2>
         <p>
           I was born in East London, where I lived until my family relocated to
           Norwich in 2004. After moving to Norfolk, I was educated at Town Close
@@ -52,32 +52,32 @@ export default ({ data }) => {
           </a>{" "}
           as a Technical Product Analyst.
         </p>
-        <h2>Interests</h2>
-        <p>
+      </div>
+
+      <div className="section">
+        <h2 className="section-title">Interests</h2>
+        <p className="interest-text">
           Outside of work I enjoy both watching and participating in sports - I
-          play for a local rugby team, will be{" "}
-          <a href="https://www.justgiving.com/fundraising/HarryMuter">
-            running the 2022 London Marathon
-          </a>
-          , and am a fan of Norwich City Football Club.
-          <div className="interests">
-            <div className="interest">
-              <Medics />
-            </div>
-            <div className="interest">
-              <a href="https://www.canaries.co.uk/">
-                <NCFC />
-              </a>
-            </div>
-          </div>
-          In 2019 I got involved with the "Sync the City" event hosted by
-          SyncNorwich. It was a very enjoyable experience and is something I
-          would definitely recommend to anyone interested in tech or business.
-          Unfortunatley Covid-19 meant that the 2020 event could not go ahead,
-          however, I am looking forward to seeing the ideas pitched at the 2021
-          instalment. I am also a member of the National Trust and spend most
-          weekends visiting their sites.
+          play for a local rugby team, will be running the 2022 London Marathon,
+          and am a fan of Norwich City Football Club. In 2019 I got involved
+          with the "Sync the City" event hosted by SyncNorwich. It was a very
+          enjoyable experience and is something I would definitely recommend to
+          anyone interested in tech or business. Unfortunatley Covid-19 meant
+          that the 2020 event could not go ahead, however, I am looking forward
+          to seeing the ideas pitched at the 2021 instalment. I am also a member
+          of the National Trust and spend most weekends visiting their sites.
         </p>
+
+        <div className="interests">
+          <div className="interest">
+            <Medics />
+          </div>
+          <div className="interest">
+            <a href="https://www.canaries.co.uk/">
+              <NCFC />
+            </a>
+          </div>
+        </div>
       </div>
     </Layout>
   )

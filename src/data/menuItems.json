@@ -3,16 +3,16 @@
     "name": "Home",
     "url": "/"
   },
-  {
-    "name": "Marathon",
-    "url": "",
-    "url2": "https://www.justgiving.com/fundraising/HarryMuter"
-  },
   { "name": "About Me", "url": "/about-me/" },
   { "name": "My Work", "url": "/my-work/" },
   {
     "name": "Contact Me",
     "url": "",
     "url2": "mailto:harry.muter95@gmail.com"
+  },
+  {
+    "name": "Marathon",
+    "url": "",
+    "url2": "https://www.justgiving.com/fundraising/HarryMuter"
   }
 ]

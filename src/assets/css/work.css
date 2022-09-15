@@ -1,55 +1,61 @@
 .academic {
   width: 100%;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
   margin: 0;
   padding: 0;
 }
-
-.content {
-  width: 50%;
-  display: inline-block;
-  margin: 0;
-  padding: 1em;
-  vertical-align: top;
-}
-
-.academic-image {
-  width: 50%;
-  display: inline-block;
-  margin: 0;
-  padding: 1em;
-  float: right !important;
-}
-
-.accordion {
-  padding: 0.6em;
-  margin: 0 0 0.6em 0;
-  background-color: #eeeeee;
-}
-
-.accordion-body {
+.portfolio-container {
+  width: 100%;
   background-color: #ffffff;
-  padding: 0.6em;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 2em;
+}
+.portfolio-icon {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+}
+.portfolio-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  height: 200px;
+  width: calc((100% / 3) - 1em);
 }
 
-.accordion-header {
-  background-color: #ffffff;
-  padding: 0.2em;
-  margin: 0 0 0.5em 0;
-  border-radius: 2px;
-  vertical-align: middle;
-  text-align: center;
-  font-weight: bold;
-  line-height: 1.4em;
-  font-size: 1.4em;
+.portfolio-box:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
+
+.portfolio-box a {
+  color: var(--off-white);
+}
+
+.portfolio-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  width: calc((100% / 3) - 1em);
 }
 
 @media only screen and (max-width: 800px) {
   .content {
     width: 100%;
   }
-  .academic-image {
-    float: left;
-    width: 100%;
+  .portfolio-container {
+    flex-direction: column;
+  }
+  .portfolio-box {
+    width: calc(100% - 2em);
+    margin: 1em;
   }
 }

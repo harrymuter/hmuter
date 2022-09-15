@@ -46,11 +46,11 @@ export default () => {
         <div className="intro-container">
           <div className="hero-container">
             <div className="hero-text">
-              <span className="hero-heading heading-large">Harry Muter.</span>
+              <h1 className="hero-heading heading-large">Harry Muter.</h1>
               <br />
-              <span className="hero-heading heading-small">
+              <h2 className="hero-heading heading-small">
                 I build websites and stuff.
-              </span>
+              </h2>
             </div>
             <div className="hero-image-container">
               <div className="hero-image">
@@ -58,15 +58,6 @@ export default () => {
               </div>
             </div>
           </div>
-          {/* <div className="info-container">
-          <h1 className="welcome">Welcome</h1>
-          <p>
-            On this website you will find information regarding my background
-            and experience, in addition to some of the projects I have been / am
-            involved with. If you are interested in learning more then please
-            feel free to explore this site and get in touch!
-          </p>
-        </div> */}
         </div>
         <>
           <div ref={sidebar} className="sidebar">
