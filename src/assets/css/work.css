@@ -54,7 +54,8 @@
   .portfolio-container {
     flex-direction: column;
   }
-  .portfolio-box {
+  .portfolio-box,
+  .portfolio-image {
     width: calc(100% - 2em);
     margin: 1em;
   }
