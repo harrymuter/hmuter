@@ -111,21 +111,21 @@ export default () => {
               <div className="tools-text">
                 <p>
                   Some say a bad workman blames their tools, but in this
-                  industry making sure you utilise the correct tools and making
-                  sure you are able to use them to their fullest potential are
-                  vital if you want to design and build quality software.
+                  industry making sure you utilise the correct tools and use
+                  them to their fullest potential is vital if you want to design
+                  and build quality software.
                 </p>
                 <p>
-                  From my academic and professional experieces, these are the
-                  languages, technologies and tools that I have built a good
-                  level of comfort and proficieny with. Of course there are a
-                  few more I hope to add, but I believe this list gives me a
-                  functional well-rounded skillset that allow me to contribute
-                  positively to any development project.
+                  From my academic and professional experiences, these are the
+                  languages, technologies and tools that I have built a
+                  proficieny with. Of course there are a few more that I hope to
+                  add, but I believe this list gives me a functional and
+                  well-rounded skillset that allow me to contribute positively
+                  to any development project.
                 </p>
                 <p>
                   I have developed these proficiencies from my work on many
-                  projects, primarly in the role of a front-end / full-stack
+                  projects, primarily in the role of a front-end / full-stack
                   developer, but also from my experiences working alongside UX
                   designers and researchers.
                 </p>
@@ -211,12 +211,13 @@ export default () => {
                 <p>
                   I left my PhD programme in 2021 after gaining a role as a
                   Technical Product Analyst at Cambridge University Press &amp;
-                  Assessment. At the press I predominantly work alongside
+                  Assessment. At the Press I predominantly work alongside
                   projects, ensuring our technical solutions integrate with our
                   exisiting capabilities / tech stack. I am very excited to be
-                  working at a firm with such a rich history and a great mission
-                  and ethos. Whilst here I hope to further extend my project
-                  management capabilities and gain valuable industry experience.
+                  working at a firm with such a rich history, and a great
+                  mission &amp; ethos. Whilst here I hope to further extend my
+                  project management capabilities and gain valuable industry
+                  experience.
                 </p>
               </div>
             </div>
@@ -257,7 +258,7 @@ export default () => {
                   University of East Anglia
                   <span className="blue">2020 - 2021</span>
                 </h4>
-                <p className="line-separation">
+                <p>
                   In 2020, I began studying toward a PhD in Business &amp;
                   Management at the University of East Anglia, with a focus on
                   the applicaiton of big data for performance management in
@@ -265,12 +266,17 @@ export default () => {
                   here, I left in 2021 after deciding to continue the pursuit of
                   a career in industry.
                 </p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col"></div>
+              <div className="col lg">
                 <h3>MSc - Knowledge Discovery and Datamining</h3>
                 <h4>
                   University of East Anglia
                   <span className="blue">2017 - 2018</span>
                 </h4>
-                <p className="line-separation">
+                <p>
                   When I graduated from my undergraduate studies I wanted to
                   learn more about the field of data science and so subsequently
                   enrolled on the MSc Knowledge Discovery and Datamining course
@@ -279,6 +285,11 @@ export default () => {
                   my understanding of information science. I graduated from this
                   programme with Merit.
                 </p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col"></div>
+              <div className="col lg">
                 <h3>BSc - Business Information Systems</h3>
                 <h4>
                   University of East Anglia

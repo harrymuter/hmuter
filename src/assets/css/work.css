@@ -27,7 +27,8 @@
   background-color: var(--primary-color);
   color: #ffffff;
   height: 200px;
-  width: calc((100% / 3) - 1em);
+  margin: 1em;
+  flex: 1;
 }
 
 .portfolio-box:hover {

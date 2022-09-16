@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import Diss from "../components/dissertation"
 import "../assets/css/work.css"
 import ed from "../assets/images/EpicDev.png"
 import sm from "../assets/images/SM.svg"
@@ -57,9 +56,6 @@ export default ({ data }) => {
         </p>
         <div className="academic">
           <div className="portfolio-container">
-            <div className="portfolio-image">
-              <Diss />
-            </div>
             <div className="portfolio-box">
               <a href={essay}>Data Mining Ethics Essay</a>
             </div>
