@@ -12,6 +12,21 @@ import CUP from "../components/cup"
 import ImageOfHarry from "../components/imageOfHarry"
 import "../assets/css/app.css"
 import "../assets/css/index.css"
+import html from "../assets/images/html.svg"
+import css from "../assets/images/css.svg"
+import js from "../assets/images/javascript.svg"
+import ts from "../assets/images/typescript.svg"
+import python from "../assets/images/python.svg"
+import react from "../assets/images/react.svg"
+import gatsby from "../assets/images/gatsby.svg"
+import aws from "../assets/images/aws.svg"
+import netlify from "../assets/images/netlify.svg"
+import mongodb from "../assets/images/mongodb.svg"
+import jira from "../assets/images/jira.svg"
+import figma from "../assets/images/figma.svg"
+import ai from "../assets/images/ai.svg"
+import git from "../assets/images/git.svg"
+import trello from "../assets/images/trello.svg"
 
 export default () => {
   const breakpoint = useRef()
@@ -89,6 +104,94 @@ export default () => {
               </a>
             </div>
           </div>
+
+          <div className="section">
+            <h2 className="section-title">Technologies and Tools</h2>
+            <div className="tools-container">
+              <div className="tools-text">
+                <p>
+                  Some say a bad workman blames their tools, but in this
+                  industry making sure you utilise the correct tools and making
+                  sure you are able to use them to their fullest potential are
+                  vital if you want to design and build quality software.
+                </p>
+                <p>
+                  From my academic and professional experieces, these are the
+                  languages, technologies and tools that I have built a good
+                  level of comfort and proficieny with. Of course there are a
+                  few more I hope to add, but I believe this list gives me a
+                  sufficiently rounded skillset.
+                </p>
+                <p>
+                  I have developed these proficiency on projects as a front-end
+                  and full-stack developer, and from my experiences working
+                  alongside UX designers and researchers.
+                </p>
+              </div>
+              <div className="tools-grid">
+                <div className="tool">
+                  <img className="tool-image" src={html} alt="HTML" />
+                  HTML
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={css} alt="CSS" />
+                  CSS
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={js} alt="JavaScript" />
+                  JavaScript
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={ts} alt="TypeScript" />
+                  TypeScript
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={python} alt="Python" />
+                  Python
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={react} alt="React" />
+                  React
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={gatsby} alt="Gatsby" />
+                  Gatsby
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={aws} alt="AWS" />
+                  AWS
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={netlify} alt="Netlify" />
+                  Netlify
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={mongodb} alt="Mongo DB" />
+                  MongoDB
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={jira} alt="Jira" />
+                  Jira
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={figma} alt="Figma" />
+                  Figma
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={ai} alt="AI" />
+                  AI
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={git} alt="Git" />
+                  Git
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={trello} alt="Trello" />
+                  Trello
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="section">
             <div className="section-title">
               <h2>Employment</h2>
@@ -107,7 +210,7 @@ export default () => {
                   I left my PhD programme in 2021 after gaining a role as a
                   Technical Product Analyst at Cambridge University Press &amp;
                   Assessment. At the press I predominantly work alongside
-                  projects, ensuring out technical solutions integrate with our
+                  projects, ensuring our technical solutions integrate with our
                   exisiting capabilities / tech stack. I am very excited to be
                   working at a firm with such a rich history and a great mission
                   and ethos. Whilst here I hope to further extend my project

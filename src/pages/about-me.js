@@ -13,20 +13,20 @@ export default ({ data }) => {
       <div className="section">
         <h2 className="section-title">Background</h2>
         <p>
-          I was born in East London, where I lived until my family relocated to
-          Norwich in 2004. After moving to Norfolk, I was educated at Town Close
-          House and then at Langley School, which is where my interest in
-          technology and computing began. For my A-Levels I selected a wide
-          range of subjects, studying Mathematics, Business Studies and
-          Photography. After finishing school I enrolled to study Business
-          Information Systems at the University of East Anglia (UEA) in 2014.
+          I was born in East London, but relocated to Norwich with my family in
+          2004. After moving to Norfolk, I attended Town Close House and then at
+          Langley School, which is where my interest in technology and computing
+          began. For my A-Levels I selected a wide range of subjects, studying
+          Mathematics, Business Studies and Photography. After finishing at
+          school I enrolled to study Business Information Systems at the
+          University of East Anglia (UEA) in 2014.
           <br />
           <br />
           I was drawn to my undergraduate course due to its interdisciplinary
           nature, as I wished to gain a rounded knowledge of fundamental
-          business and computational theory, as well as learn practical software
-          development skills. After graduating in 2017, with First Class
-          Honours, I wanted to specialise in data science and subsequently
+          business and computer science theory, as well as learn practical
+          software development skills. After graduating in 2017, with First
+          Class Honours, I wanted to specialise in data science and subsequently
           enrolled on the MSc knowledge Discovery and Datamining course at UEA.
           During this course I learnt about applications of data science
           methods, such as Linear Regression, Clustering, ANNs and Descision
