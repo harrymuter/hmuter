@@ -120,12 +120,14 @@ export default () => {
                   languages, technologies and tools that I have built a good
                   level of comfort and proficieny with. Of course there are a
                   few more I hope to add, but I believe this list gives me a
-                  sufficiently rounded skillset.
+                  functional well-rounded skillset that allow me to contribute
+                  positively to any development project.
                 </p>
                 <p>
-                  I have developed these proficiency on projects as a front-end
-                  and full-stack developer, and from my experiences working
-                  alongside UX designers and researchers.
+                  I have developed these proficiencies from my work on many
+                  projects, primarly in the role of a front-end / full-stack
+                  developer, but also from my experiences working alongside UX
+                  designers and researchers.
                 </p>
               </div>
               <div className="tools-grid">
