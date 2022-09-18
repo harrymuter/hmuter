@@ -37,13 +37,16 @@ const Layout = ({ children }) => {
           </div>
           <div className="footer-col">
             <div className="footer-list icons">
-              <a href="https://www.linkedin.com/in/muter/">
+              <a
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/in/muter/"
+              >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
-              <a href="https://twitter.com/harrymuter">
+              <a aria-label="Twitter" href="https://twitter.com/harrymuter">
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
-              <a href="https://github.com/harrymuter">
+              <a aria-label="GitHub" href="https://github.com/harrymuter">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </div>
