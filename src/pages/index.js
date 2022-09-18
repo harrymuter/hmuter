@@ -83,6 +83,7 @@ export default () => {
           <div ref={sidebar} className="sidebar">
             <div className="sidebar-item">
               <a
+                aria-label="LinkedIn"
                 className="white"
                 title="LinkedIn"
                 href="https://www.linkedin.com/in/muter/"
@@ -92,6 +93,7 @@ export default () => {
             </div>
             <div className="sidebar-item">
               <a
+                aria-label="Twitter"
                 className="white"
                 title="Twitter"
                 href="https://twitter.com/harrymuter"
@@ -101,6 +103,7 @@ export default () => {
             </div>
             <div className="sidebar-item">
               <a
+                aria-label="GitHub"
                 className="white"
                 title="GitHub"
                 href="https://github.com/harrymuter"

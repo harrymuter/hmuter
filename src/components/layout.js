@@ -49,7 +49,10 @@ const Layout = ({ children }) => {
             </div>
           </div>
           <div className="footer-col right icons">
-            <a href="mailto:harry.muter95@gmail.com">
+            <a
+              aria-label="Email: harry.muter95@gmail.com"
+              href="mailto:harry.muter95@gmail.com"
+            >
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </div>

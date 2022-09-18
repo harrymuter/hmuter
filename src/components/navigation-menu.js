@@ -13,14 +13,14 @@ export default () => {
       <div className="navigation-inner">
         <div className="menu-branding">
           <Link to="/">
-            <img className={`navigation-logo`} src={logo} />
+            <img className={`navigation-logo`} src={logo} alt="Harry Muter" />
           </Link>
         </div>
 
         <div className="menu-toggle">
           <div
             role="button"
-            // tabIndex={0}
+            aria-label="Navigation Menu"
             onKeyDown={() => (menuOpen ? toggleMenu(false) : toggleMenu(true))}
             onClick={() => (menuOpen ? toggleMenu(false) : toggleMenu(true))}
             className={`animated-icon1 ${menuOpen ? "open" : ""}`}
