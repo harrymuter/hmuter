@@ -19,9 +19,14 @@ import ts from "../assets/images/typescript.svg"
 import python from "../assets/images/python.svg"
 import react from "../assets/images/react.svg"
 import gatsby from "../assets/images/gatsby.svg"
+import wordpress from "../assets/images/wordpress.svg"
+import shopify from "../assets/images/shopify.svg"
 import aws from "../assets/images/aws.svg"
 import netlify from "../assets/images/netlify.svg"
+import stripe from "../assets/images/stripe.svg"
+import strapi from "../assets/images/strapi.svg"
 import mongodb from "../assets/images/mongodb.svg"
+import mysql from "../assets/images/mysql.svg"
 import jira from "../assets/images/jira.svg"
 import figma from "../assets/images/figma.svg"
 import ai from "../assets/images/ai.svg"
@@ -160,6 +165,14 @@ export default () => {
                   Gatsby
                 </div>
                 <div className="tool">
+                  <img className="tool-image" src={wordpress} alt="Wordpress" />
+                  Wordpress
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={shopify} alt="Shopify" />
+                  Shopify
+                </div>
+                <div className="tool">
                   <img className="tool-image" src={aws} alt="AWS" />
                   AWS
                 </div>
@@ -168,8 +181,20 @@ export default () => {
                   Netlify
                 </div>
                 <div className="tool">
+                  <img className="tool-image" src={stripe} alt="Stripe" />
+                  Stripe
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={strapi} alt="Strapi" />
+                  Strapi
+                </div>
+                <div className="tool">
                   <img className="tool-image" src={mongodb} alt="Mongo DB" />
                   MongoDB
+                </div>
+                <div className="tool">
+                  <img className="tool-image" src={mysql} alt="MySQL" />
+                  MySQL
                 </div>
                 <div className="tool">
                   <img className="tool-image" src={jira} alt="Jira" />

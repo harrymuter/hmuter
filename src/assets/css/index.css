@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "GT-Walsheim-Bold";
   src: url(../fonts/GT-Walsheim-LC-Bold.woff2) format("woff2"),
     url(../fonts/GT-Walsheim-LC-Bold.woff) format("woff"),
@@ -7,7 +7,9 @@
 @font-face {
   font-family: "Calibre";
   src: url(../fonts/Calibre.woff2) format("woff2");
-}
+} */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap");
+
 .tools-container {
   display: flex;
   flex-direction: row;
@@ -82,9 +84,9 @@
 .hero-heading {
   display: contents;
   overflow: auto;
-  font-family: "Calibre", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 900;
 }
 .heading-large {
   font-size: clamp(40px, 8vw, 80px);
@@ -92,7 +94,7 @@
 .heading-small {
   font-size: clamp(30px, 6vw, 50px);
   color: var(--light-color);
-  font-weight: bold;
+  font-weight: 900;
 }
 .hero-container {
   background-color: var(--primary-color);
@@ -120,7 +122,7 @@
 }
 
 .page-title {
-  font-family: "Calibre", sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   max-width: 1200px;
