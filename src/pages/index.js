@@ -234,7 +234,7 @@ export default () => {
                 <h3>Technical Product Analyst</h3>
                 <h4>
                   Cambridge University Press &amp; Assessment
-                  <span className="blue">2021 - Present</span>
+                  <span className="blue">Nov 2021 - Present</span>
                 </h4>
                 <p>
                   I left my PhD programme in 2021 after gaining a role as a
@@ -257,7 +257,7 @@ export default () => {
                 <h3>ProductWriter Developer</h3>
                 <h4>
                   Aviva
-                  <span className="blue">2018 - 2020</span>
+                  <span className="blue">Sep 2018 - Sep 2020</span>
                 </h4>
                 <p>
                   Upon finishing my Master’s degree I gained a position as a
@@ -284,7 +284,7 @@ export default () => {
                 <h3>PhD - Business and Management</h3>
                 <h4>
                   University of East Anglia
-                  <span className="blue">2020 - 2021</span>
+                  <span className="blue">Sep 2020 - Nov 2021</span>
                 </h4>
                 <p>
                   In 2020, I began studying toward a PhD in Business &amp;
@@ -302,7 +302,7 @@ export default () => {
                 <h3>MSc - Knowledge Discovery and Datamining</h3>
                 <h4>
                   University of East Anglia
-                  <span className="blue">2017 - 2018</span>
+                  <span className="blue">Sep 2017 - Sep 2018</span>
                 </h4>
                 <p>
                   When I graduated from my undergraduate studies I wanted to
@@ -321,7 +321,7 @@ export default () => {
                 <h3>BSc - Business Information Systems</h3>
                 <h4>
                   University of East Anglia
-                  <span className="blue">2014 - 2017</span>
+                  <span className="blue">Sep 2014 - Jul 2017</span>
                 </h4>
                 <p>
                   My undergraduate course allowed me to pursue a degree that
