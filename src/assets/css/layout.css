@@ -11,6 +11,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--off-white);
   color: hsla(0, 0%, 0%, 0.8);
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -587,6 +588,36 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: "";
+}
+.social-icon-banner {
+  fill: none;
+  width: 1em;
+  stroke: var(--primary-color);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.social-icon-banner:hover {
+  stroke: var(--secondary-color);
+}
+
+.social-icon {
+  fill: none;
+  width: 1em;
+  stroke: var(--light-color);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.social-icon:hover {
+  stroke: var(--off-white);
+}
+.footer-link {
+  font-weight: 300;
+  color: var(--light-color);
+}
+.footer-link:hover {
+  color: var(--off-white);
 }
 @media only screen and (max-width: 480px) {
   html {

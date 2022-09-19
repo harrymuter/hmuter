@@ -3,7 +3,7 @@ import "../assets/css/navigation-menu.css"
 import "../assets/css/characters.css"
 import menuItems from "../data/menuItems.json"
 import { Link } from "gatsby"
-import logo from "../assets/images/logo.svg"
+import logo from "../assets/images/logo2.svg"
 
 export default () => {
   const [menuOpen, toggleMenu] = useState(false)

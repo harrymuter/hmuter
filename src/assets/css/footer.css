@@ -2,7 +2,8 @@
   margin: 0;
   width: 100%;
   padding: 0;
-  background-color: #dedede;
+  background-color: var(--primary-color);
+  color: var(--light-color);
   display: flex;
 }
 

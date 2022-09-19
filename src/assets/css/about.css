@@ -29,15 +29,28 @@
   padding: 0 1em;
 }
 .graduation-photo {
-  max-height: 320px;
-  padding-bottom: 2em;
+  max-width: 100%;
+  width: 350px;
+  max-height: 500px;
+}
+.caption {
+  width: 350px;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--secondary-color);
 }
 .about-item:nth-child(1) {
   grid-area: 1 / 1 / 2 / 2;
 }
 .about-item:nth-child(2) {
-  grid-area: 1 / 2 / 2 / 3;
-  height: 100px;
+  grid-area: 1 / 2 / 3 / 3;
+  height: 100%;
   text-align: center;
 }
 .about-item:nth-child(3) {

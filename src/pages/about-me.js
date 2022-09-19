@@ -27,6 +27,9 @@ export default ({ data }) => {
               src={graduation}
               alt="Handsome young man at his graduation ceremony."
             />
+            <span className="caption">
+              Me at my graduation ceremony, July 2017.
+            </span>
           </div>
           <p className="about-item">
             I was drawn to my undergraduate course due to its interdisciplinary
@@ -77,7 +80,7 @@ export default ({ data }) => {
           of the National Trust and spend most weekends visiting their sites.
         </p>
 
-        <div className="interests">
+        {/* <div className="interests">
           <div className="interest">
             <Medics />
           </div>
@@ -86,7 +89,7 @@ export default ({ data }) => {
               <NCFC />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </Layout>
   )

@@ -185,11 +185,12 @@
   line-height: 2em;
   padding: 0 2em;
 }
-.white {
-  color: var(--tertiary-color);
-}
-.white:hover {
-  color: var(--primary-color);
+
+.experience-image {
+  display: flex;
+  margin: auto;
+  max-height: 60px;
+  max-width: 75px;
 }
 
 /* MOBILE */
