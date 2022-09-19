@@ -599,7 +599,7 @@ pre tt:after {
   stroke-linejoin: round;
 }
 .social-icon-banner:hover {
-  stroke: var(--secondary-color);
+  stroke: var(--tertiary-color);
 }
 
 .social-icon {
