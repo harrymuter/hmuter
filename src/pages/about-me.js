@@ -1,7 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import NCFC from "../components/ncfc"
-import Medics from "../components/medics"
 import graduation from "../assets/images/graduation.jpeg"
 import "../assets/css/about.css"
 
