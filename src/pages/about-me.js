@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import graduation from "../assets/images/graduation.jpeg"
 import "../assets/css/about.css"
 
-export default ({ data }) => {
+const AboutMe = ({ data }) => {
   return (
     <Layout>
       <h1 className="page-title">About Me</h1>
@@ -66,16 +66,11 @@ export default ({ data }) => {
       </div>
       <div className="section">
         <h2 className="section-title">Interests</h2>
-        <p className="interest-text">
+        <p>
           Outside of work I enjoy both watching and participating in sports - I
-          play for a local rugby team, will be running the 2022 London Marathon,
-          and am a fan of Norwich City Football Club. In 2019 I got involved
-          with the "Sync the City" event hosted by SyncNorwich. It was a very
-          enjoyable experience and is something I would definitely recommend to
-          anyone interested in tech or business. Unfortunatley Covid-19 meant
-          that the 2020 event could not go ahead, however, I am looking forward
-          to seeing the ideas pitched at the 2021 instalment. I am also a member
-          of the National Trust and spend most weekends visiting their sites.
+          play for a local rugby team, ran the 2022 London Marathon, and am a
+          fan of Norwich City Football Club. I am also a member of the National
+          Trust and spend most weekends visiting their sites.
         </p>
 
         {/* <div className="interests">
@@ -92,3 +87,5 @@ export default ({ data }) => {
     </Layout>
   )
 }
+
+export default AboutMe

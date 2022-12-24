@@ -7,11 +7,6 @@
   align-items: center;
   justify-content: center;
 }
-.interest-text {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
 .interest {
   display: flex;
   flex-direction: column;
@@ -25,9 +20,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
 }
-.about-item {
-  padding: 0 1em;
-}
+
 .graduation-photo {
   max-width: 100%;
   width: 350px;
