@@ -289,7 +289,7 @@ const Index = () => {
               </div>
             </FadeInElement>
             <FadeInElement>
-              <div ref={fade} className="row">
+              <div className="row">
                 <div className="col">
                   <img
                     className="experience-image"
@@ -322,7 +322,7 @@ const Index = () => {
               </div>
             </FadeInElement>
             <FadeInElement>
-              <div ref={fade} className="row">
+              <div className="row">
                 <div className="col">
                   <img
                     className="experience-image"
@@ -358,7 +358,7 @@ const Index = () => {
               </div>
             </FadeInElement>
             <FadeInElement>
-              <div ref={fade} className="row">
+              <div className="row">
                 <div className="col">
                   <img
                     className="experience-image"
@@ -393,7 +393,7 @@ const Index = () => {
               </div>
             </FadeInElement>
             <FadeInElement>
-              <div ref={fade} className="row">
+              <div className="row">
                 <div className="col">
                   <img
                     className="experience-image"
