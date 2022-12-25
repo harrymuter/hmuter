@@ -131,17 +131,21 @@ const Index = () => {
               </a>
             </div>
           </div>
-          <FadeInElement>
-            <div className="section">
+          <div className="section">
+            <FadeInElement>
               <h2 className="section-title">Technologies and Tools</h2>
-              <div className="tools-container">
-                <div className="tools-text">
+            </FadeInElement>
+            <div className="tools-container">
+              <div className="tools-text">
+                <FadeInElement>
                   <p>
                     Some say a bad workman blames their tools, but in this
                     industry making sure you utilise the correct tools and use
                     them to their fullest potential is vital if you want to
                     design and build quality software.
                   </p>
+                </FadeInElement>
+                <FadeInElement>
                   <p>
                     From my academic and professional experiences, these are the
                     languages, technologies and tools that I have built a
@@ -150,102 +154,160 @@ const Index = () => {
                     well-rounded skillset that allow me to contribute positively
                     to any development project.
                   </p>
+                </FadeInElement>
+                <FadeInElement>
                   <p>
                     I have developed these proficiencies from my work on many
                     projects, primarily in the role of a front-end / full-stack
                     developer, but also from my experiences working alongside UX
                     designers and researchers.
                   </p>
-                </div>
-                <div className="tools-grid">
-                  <div className="tool">
+                </FadeInElement>
+              </div>
+              <div className="tools-grid">
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={html} alt="HTML" />
-                    HTML
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>HTML</FadeInElement>
+                </div>
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={css} alt="CSS" />
-                    CSS
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>CSS</FadeInElement>
+                </div>
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={js} alt="JavaScript" />
-                    JavaScript
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>JavaScript</FadeInElement>
+                </div>
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={ts} alt="TypeScript" />
-                    TypeScript
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>TypeScript</FadeInElement>
+                </div>
+
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={python} alt="Python" />
-                    Python
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>Python</FadeInElement>
+                </div>
+
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={react} alt="React" />
-                    React
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>React</FadeInElement>
+                </div>
+
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={gatsby} alt="Gatsby" />
-                    Gatsby
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>Gatsby</FadeInElement>
+                </div>
+
+                <div className="tool">
+                  <FadeInElement>
                     <img
                       className="tool-image"
                       src={wordpress}
                       alt="Wordpress"
                     />
-                    Wordpress
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>Wordpress</FadeInElement>
+                </div>
+
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={shopify} alt="Shopify" />
-                    Shopify
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>Shopify</FadeInElement>
+                </div>
+
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={aws} alt="AWS" />
-                    AWS
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>AWS</FadeInElement>
+                </div>
+
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={netlify} alt="Netlify" />
-                    Netlify
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>Netlify</FadeInElement>
+                </div>
+
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={stripe} alt="Stripe" />
-                    Stripe
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>Stripe</FadeInElement>
+                </div>
+
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={strapi} alt="Strapi" />
-                    Strapi
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>Strapi</FadeInElement>
+                </div>
+
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={mongodb} alt="Mongo DB" />
-                    MongoDB
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>MongoDB</FadeInElement>
+                </div>
+
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={mysql} alt="MySQL" />
-                    MySQL
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>MySQL</FadeInElement>
+                </div>
+
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={jira} alt="Jira" />
-                    Jira
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>Jira</FadeInElement>
+                </div>
+
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={figma} alt="Figma" />
-                    Figma
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>Figma</FadeInElement>
+                </div>
+
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={ai} alt="AI" />
-                    AI
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>AI</FadeInElement>
+                </div>
+
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={git} alt="Git" />
-                    Git
-                  </div>
-                  <div className="tool">
+                  </FadeInElement>
+                  <FadeInElement>Git</FadeInElement>
+                </div>
+
+                <div className="tool">
+                  <FadeInElement>
                     <img className="tool-image" src={trello} alt="Trello" />
-                    Trello
-                  </div>
+                  </FadeInElement>
+                  <FadeInElement>Trello</FadeInElement>
                 </div>
               </div>
             </div>
-          </FadeInElement>
+          </div>
           <div className="section">
             <FadeInElement>
               <div className="section-title">
