@@ -1,24 +1,32 @@
 import React, { useEffect, useState } from "react"
+import { useCookies } from "react-cookie"
 import "../assets/css/navigation-menu.css"
 import "../assets/css/characters.css"
 import menuItems from "../data/menuItems.json"
 import { Link } from "gatsby"
 import logostart from "../assets/images/logostart.svg"
-import logoend from "../assets/images/logoend.svg"
 
 export default () => {
   const [menuOpen, toggleMenu] = useState(false)
   const [subItem, toggleSubItem] = useState(null)
   const [loaded, setLoaded] = useState(false)
+  const [cookies, setCookie] = useCookies(["loaded"])
   useEffect(() => {
-    setTimeout(() => {
-      setLoaded(true)
-    }, 300)
+    if (!cookies.loaded || (cookies.loaded && cookies.loaded === false)) {
+      setTimeout(() => {
+        setLoaded(true)
+        setCookie("loaded", true)
+      }, 300)
+    }
   }, [])
   return (
     <div className="navbar">
       <div className="navigation-inner">
-        <div className={`menu-branding${loaded ? "-loaded" : ""}`}>
+        <div
+          className={`menu-branding${
+            loaded || cookies.loaded ? "-loaded" : ""
+          }`}
+        >
           <Link to="/">
             <img
               className={`navigation-logo`}

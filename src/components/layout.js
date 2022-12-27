@@ -1,6 +1,5 @@
 import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { CookiesProvider } from "react-cookie"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -20,7 +19,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <CookiesProvider>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div className="outer-container">
         <main>{children}</main>
@@ -84,7 +83,7 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </div>
-    </>
+    </CookiesProvider>
   )
 }
 
