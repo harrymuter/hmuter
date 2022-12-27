@@ -13,7 +13,7 @@ const AboutMe = ({ data }) => {
           <p className="about-item">
             I was born in East London, but relocated to Norwich with my family
             in 2004. After moving to Norfolk, I attended Town Close House and
-            then at Langley School, which is where my interest in technology and
+            then Langley School, which is where my interest in technology and
             computing began. For my A-Levels I selected a wide range of
             subjects, studying Mathematics, Business Studies and Photography.
             After finishing at school I enrolled to study Business Information
@@ -45,9 +45,9 @@ const AboutMe = ({ data }) => {
             Upon graduating from UEA with Merit, I gained a role within the
             Commercial Underwriting Solutions Delivery department at Aviva.
             Whilst there, the team I worked in were responsible for the
-            maintenance, development, and testing of the rating algorithm for
-            Aviva's commercial products within the United Kingdom and Channel
-            Islands.
+            maintenance, development, and testing of the underwriting and
+            pricing algorithms for Aviva's commercial products within the United
+            Kingdom and Channel Islands.
           </p>
           <p className="about-item">
             After two years of industry experience I wanted to move into

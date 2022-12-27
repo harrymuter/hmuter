@@ -1,19 +1,30 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import "../assets/css/navigation-menu.css"
 import "../assets/css/characters.css"
 import menuItems from "../data/menuItems.json"
 import { Link } from "gatsby"
-import logo from "../assets/images/logo2.svg"
+import logostart from "../assets/images/logostart.svg"
+import logoend from "../assets/images/logoend.svg"
 
 export default () => {
   const [menuOpen, toggleMenu] = useState(false)
   const [subItem, toggleSubItem] = useState(null)
+  const [loaded, setLoaded] = useState(false)
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true)
+    }, 300)
+  }, [])
   return (
     <div className="navbar">
       <div className="navigation-inner">
-        <div className="menu-branding">
+        <div className={`menu-branding${loaded ? "-loaded" : ""}`}>
           <Link to="/">
-            <img className={`navigation-logo`} src={logo} alt="Harry Muter" />
+            <img
+              className={`navigation-logo`}
+              src={logostart}
+              alt="Harry Muter"
+            />
           </Link>
         </div>
 
