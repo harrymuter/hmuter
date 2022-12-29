@@ -9,12 +9,10 @@ import logostart from "../assets/images/logostart.svg"
 export default () => {
   const [menuOpen, toggleMenu] = useState(false)
   const [subItem, toggleSubItem] = useState(null)
-  const [loaded, setLoaded] = useState(false)
   const [cookies, setCookie] = useCookies(["loaded"])
   useEffect(() => {
     if (!cookies.loaded || (cookies.loaded && cookies.loaded === false)) {
       setTimeout(() => {
-        setLoaded(true)
         setCookie("loaded", true)
       }, 300)
     }
@@ -22,11 +20,7 @@ export default () => {
   return (
     <div className="navbar">
       <div className="navigation-inner">
-        <div
-          className={`menu-branding${
-            loaded || cookies.loaded ? "-loaded" : ""
-          }`}
-        >
+        <div className={`menu-branding${cookies.loaded ? "-loaded" : ""}`}>
           <Link to="/">
             <img
               className={`navigation-logo`}
