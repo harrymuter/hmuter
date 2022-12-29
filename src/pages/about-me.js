@@ -1,88 +1,122 @@
 import React from "react"
 import Layout from "../components/layout"
 import graduation from "../assets/images/graduation.jpeg"
+import Spotify from "react-spotify-embed"
+import marathon from "../assets/images/marathon.jpeg"
+import marathonMedal from "../assets/images/marathon-medal.jpeg"
+import halfMarathon from "../assets/images/half-marathon.jpeg"
+import Slider from "../components/slider"
 import "../assets/css/about.css"
+import PremierLeague from "../components/PremierLeague"
 
-const AboutMe = ({ data }) => {
+const AboutMe = () => {
   return (
     <Layout>
       <h1 className="page-title">About Me</h1>
       <div className="section">
         <h2 className="section-title">Background</h2>
         <div className="about-section">
-          <p className="about-item">
-            I was born in East London, but relocated to Norwich with my family
-            in 2004. After moving to Norfolk, I attended Town Close House and
-            then Langley School, which is where my interest in technology and
-            computing began. For my A-Levels I selected a wide range of
-            subjects, studying Mathematics, Business Studies and Photography.
-            After finishing at school I enrolled to study Business Information
-            Systems at the University of East Anglia (UEA) in 2014.
-          </p>
+          <div className="about-item">
+            <p>
+              I was born in East London, but relocated to Norwich with my family
+              in 2004, where I attended{" "}
+              <a href="https://townclose.com/">Town Close School</a> and then{" "}
+              <a href="https://langleyschool.co.uk/">Langley School</a>. For my
+              A-Levels I selected a wide range of subjects, studying
+              Mathematics, Business Studies and Photography. After finishing
+              school I enrolled to study Business Information Systems at the{" "}
+              <a href="https://www.uea.ac.uk/">
+                University of East Anglia &#40;UEA&#41;
+              </a>
+              , beginning in September 2014.
+            </p>
+          </div>
+          <div className="about-item">
+            <p>
+              I was drawn to my undergraduate course due to its
+              interdisciplinary nature as I wished to gain a rounded knowledge
+              of fundamental business principles, as well as practical software
+              development skills. I graduated in July 2017, with First Class
+              Honours before deciding to specialise in data science by enrolling
+              on the{" "}
+              <a href="https://www.uea.ac.uk/course/postgraduate/msc-data-science">
+                MSc Knowledge Discovery and Datamining course
+              </a>{" "}
+              at UEA .
+            </p>
+          </div>
+          <div className="about-item">
+            <p>
+              Upon graduating from my MSc with Merit, I gained a role at{" "}
+              <a href="https://www.aviva.com/">Aviva</a>. Whilst there, I was
+              responsible for the maintenance, development, and testing of the
+              underwriting and pricing algorithms for Aviva's commercial
+              products.
+            </p>
+          </div>
+          <div className="about-item">
+            <p>
+              After two years of industry experience I wanted to move into
+              research and academia so I applied for a{" "}
+              <a href="https://www.uea.ac.uk/course/phd-doctorate/postgraduate-research-in-business-and-management">
+                doctoral studentship at UEA &#40;within the Norwich Business
+                School&#41;
+              </a>{" "}
+              gaining a role on their Graduate Teaching Assistant scheme.
+              Although I enjoyed my time on this programme, I left in November
+              2021 after deciding to transition back into industry to pursue a
+              career. I am currently working at{" "}
+              <a href="https://www.cambridge.org/">
+                Cambridge University Press &amp; Assessment
+              </a>{" "}
+              as a Technical Product Analyst.
+            </p>
+          </div>
+        </div>
+        <div className="about-section">
           <div className="about-item">
             <img
               className="graduation-photo"
               src={graduation}
               alt="Handsome young man at his graduation ceremony."
             />
-            <span className="caption">
-              Me at my graduation ceremony, July 2017.
-            </span>
+            <span className="caption">My graduation ceremony, July 2017.</span>
           </div>
-          <p className="about-item">
-            I was drawn to my undergraduate course due to its interdisciplinary
-            nature, as I wished to gain a rounded knowledge of fundamental
-            business and computer science theory, as well as learn practical
-            software development skills. After graduating in 2017, with First
-            Class Honours, I wanted to specialise in data science and
-            subsequently enrolled on the MSc knowledge Discovery and Datamining
-            course at UEA. During this course I learnt about applications of
-            data science methods, such as Linear Regression, Clustering, ANNs
-            and Descision Trees; familiarised myself with the R and Python
-            programming languages; and also gained experience using SPSS.
-          </p>
-          <p className="about-item">
-            Upon graduating from UEA with Merit, I gained a role within the
-            Commercial Underwriting Solutions Delivery department at Aviva.
-            Whilst there, the team I worked in were responsible for the
-            maintenance, development, and testing of the underwriting and
-            pricing algorithms for Aviva's commercial products within the United
-            Kingdom and Channel Islands.
-          </p>
-          <p className="about-item">
-            After two years of industry experience I wanted to move into
-            research and academia so I applied for a doctoral studentship at UEA
-            (within the Norwich Business School) gaining a role on their
-            Graduate Teaching Assistant scheme. Although I very much enjoyed my
-            time on this programme, I left in November 2021 after deciding to
-            transition back into industry to pursue a career. I am currently
-            working at{" "}
-            <a href="https://www.cambridge.org/">
-              Cambridge University Press &amp; Assessment
-            </a>{" "}
-            as a Technical Product Analyst.
-          </p>
         </div>
       </div>
       <div className="section">
         <h2 className="section-title">Interests</h2>
-        <p>
-          Outside of work I enjoy both watching and participating in sports - I
-          play for a local rugby team, ran the 2022 London Marathon, and am a
-          fan of Norwich City Football Club. I am also a member of the National
-          Trust and spend most weekends visiting their sites.
-        </p>
-
-        {/* <div className="interests">
-          <div className="interest">
-            <Medics />
+        <div className="about-section">
+          <p className="about-item">
+            Outside of work I enjoy both watching and participating in sports -
+            I play for a local rugby team, have run the 2022 London Marathon,
+            and support Norwich City Football Club. I am also a member of the
+            National Trust and spend most weekends visiting their sites.
+          </p>
+          <div className="about-item">
+            <Slider images={[marathon, marathonMedal, halfMarathon]} />
           </div>
-          <div className="interest">
-            <a href="https://www.canaries.co.uk/">
-              <NCFC />
-            </a>
+          <div className="about-item">
+            <PremierLeague />
           </div>
-        </div> */}
+        </div>
+        <div className="about-section">
+          <div className="about-item">
+            <h4>What I'm listening to...</h4>
+            <Spotify link="https://open.spotify.com/playlist/57G3nkGhlEeoYn7nuI78gc?si=640d5369c468448f" />
+          </div>
+          <div className="about-item">
+            <h4>Where I'm runnning...</h4>
+            <iframe
+              height="454"
+              width="300"
+              frameBorder="0"
+              allowtransparency="true"
+              scrolling="no"
+              src="https://www.strava.com/athletes/49208008/latest-rides/a97d5a68d609a2ec5edcbb99a58a1108c9fadf1c"
+            ></iframe>
+          </div>
+        </div>
       </div>
     </Layout>
   )
