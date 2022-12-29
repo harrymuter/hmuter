@@ -96,9 +96,9 @@ const AboutMe = () => {
           <div className="about-item">
             <Slider images={[marathon, marathonMedal, halfMarathon]} />
           </div>
-          <div className="about-item">
+          {/* <div className="about-item">
             <PremierLeague />
-          </div>
+          </div> */}
         </div>
         <div className="about-section">
           <div className="about-item">

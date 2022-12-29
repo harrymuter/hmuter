@@ -52,6 +52,7 @@ const PremierLeague = () => {
     const allData = await getAllData()
     const myData = await getMyData()
     const myTeam = await getMyTeam(myData.current_event)
+    console.log(allData, myData, myTeam)
     setTeamInfo(myData)
     setCurrentTeam(myTeam)
     myTeam.picks.map((pick, index) => {

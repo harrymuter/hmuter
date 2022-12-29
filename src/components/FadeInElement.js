@@ -6,7 +6,6 @@ const FadeInElement = ({ children }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       if (entries[0].isIntersecting) {
-        console.log(entries[0])
         setVisible(true)
         observer.unobserve(domRef.current)
       }
