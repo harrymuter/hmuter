@@ -4,7 +4,14 @@ import graduation from "../assets/images/graduation.jpeg"
 import Spotify from "react-spotify-embed"
 import marathon from "../assets/images/marathon.jpeg"
 import marathonMedal from "../assets/images/marathon-medal.jpeg"
+import quito from "../assets/images/quito.jpeg"
 import halfMarathon from "../assets/images/half-marathon.jpeg"
+import rugby from "../assets/images/rugby.jpeg"
+import llama from "../assets/images/llama.jpeg"
+import walking from "../assets/images/walking.jpg"
+import pint from "../assets/images/pint.jpg"
+import folley from "../assets/images/folley.jpeg"
+import mudder from "../assets/images/mudder.jpeg"
 import Slider from "../components/slider"
 import "../assets/css/about.css"
 import PremierLeague from "../components/PremierLeague"
@@ -94,7 +101,21 @@ const AboutMe = () => {
             National Trust and spend most weekends visiting their sites.
           </p>
           <div className="about-item">
-            <Slider images={[marathon, marathonMedal, halfMarathon]} />
+            <h4>A selection of pictures...</h4>
+            <Slider
+              images={[
+                marathon,
+                marathonMedal,
+                quito,
+                halfMarathon,
+                pint,
+                rugby,
+                folley,
+                mudder,
+                llama,
+                walking,
+              ]}
+            />
           </div>
           {/* <div className="about-item">
             <PremierLeague />

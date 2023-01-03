@@ -37,8 +37,12 @@
   width: calc(100% - 80px);
   aspect-ratio: 1;
   display: flex;
+  background-color: var(--primary-color);
 }
 .slider-image-container {
+  align-items: center;
+  height: 100%;
+  vertical-align: middle;
   display: flex;
   max-width: 100%;
   flex-direction: row;
@@ -64,9 +68,6 @@
 }
 
 .slider-image {
-  min-width: -webkit-fill-available;
-  min-height: -webkit-fill-available;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
+  width: fit-content;
 }

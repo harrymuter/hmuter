@@ -31,7 +31,12 @@ import trello from "../assets/images/trello.svg"
 const Index = () => {
   const breakpoint = useRef()
   const sidebar = useRef()
+  const [experienceFilter, setExpereinceFilter] = useState("")
   const [showSideBar, setShowSideBar] = useState(false)
+
+  const handleSetFilter = e => {
+    setExpereinceFilter(e.target.value)
+  }
 
   const handleScroll = () => {
     if (breakpoint.current.getBoundingClientRect().y < 0) {
@@ -43,7 +48,6 @@ const Index = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true })
-
     return () => {
       window.removeEventListener("scroll", handleScroll)
     }
@@ -315,172 +319,211 @@ const Index = () => {
               </div>
             </FadeInElement>
             <FadeInElement>
-              <div className="row">
-                <div className="col">
-                  <img
-                    className="experience-image"
-                    src={cupa}
-                    alt="Cambridge University Press and Assessment"
-                  />
-                </div>
-                <div className="col">
-                  <h3>Technical Product Analyst</h3>
-                  <h4>
-                    Cambridge University Press &amp; Assessment
-                    <span className="blue">Nov 2021 - Present</span>
-                  </h4>
-                  <p>
-                    I left my PhD programme in 2021 after gaining a role as a
-                    Technical Product Analyst at Cambridge University Press
-                    &amp; Assessment. At the Press I predominantly work
-                    alongside projects, ensuring our technical solutions
-                    integrate with our exisiting capabilities / tech stack. I am
-                    very excited to be working at a firm with such a rich
-                    history, and a great mission &amp; ethos. Whilst here I hope
-                    to further extend my project management capabilities and
-                    gain valuable industry experience.
-                  </p>
-                </div>
-              </div>
+              <label className="experience-label">
+                Filter experience by education and work
+              </label>
+              <select
+                className="experience-filter"
+                onChange={e => handleSetFilter(e)}
+              >
+                <option value="">All</option>
+                <option value="education">Education</option>
+                <option value="work">Work</option>
+              </select>
             </FadeInElement>
-            <FadeInElement>
-              <div className="separator">
-                <div className="end-node"></div>
-                <div className="line"></div>
-                <div className="start-node"></div>
-              </div>
-            </FadeInElement>
-            <FadeInElement>
-              <div className="row">
-                <div className="col">
-                  <img
-                    className="experience-image"
-                    src={uea}
-                    alt="University of East Anglia"
-                  />
+
+            {(experienceFilter == "" || experienceFilter == "work") && (
+              <FadeInElement>
+                <div className="row">
+                  <div className="col">
+                    <img
+                      className="experience-image"
+                      src={cupa}
+                      alt="Cambridge University Press and Assessment"
+                    />
+                  </div>
+                  <div className="col">
+                    <h3>Technical Product Analyst</h3>
+                    <h4>
+                      Cambridge University Press &amp; Assessment
+                      <span className="blue">Nov 2021 - Present</span>
+                    </h4>
+                    <p>
+                      I left my PhD programme in 2021 after gaining a role as a
+                      Technical Product Analyst at Cambridge University Press
+                      &amp; Assessment. At the Press I predominantly work
+                      alongside projects, ensuring our technical solutions
+                      integrate with our exisiting capabilities / tech stack. I
+                      am very excited to be working at a firm with such a rich
+                      history, and a great mission &amp; ethos. Whilst here I
+                      hope to further extend my project management capabilities
+                      and gain valuable industry experience.
+                    </p>
+                  </div>
                 </div>
-                <div className="col">
-                  <h3>PhD - Business and Management</h3>
-                  <h4>
-                    University of East Anglia
-                    <span className="blue">Sep 2020 - Nov 2021</span>
-                  </h4>
-                  <p>
-                    In 2020, I began studying toward a PhD in Business &amp;
-                    Management at the University of East Anglia, with a focus on
-                    the applicaiton of big data for performance management in
-                    service organisations. Although I very much enjoyed my time
-                    here, I left in 2021 after deciding to continue the pursuit
-                    of a career in industry.
-                  </p>
-                </div>
-              </div>
-            </FadeInElement>
-            <FadeInElement>
-              <div className="separator">
-                <div className="end-node"></div>
-                <div className="line"></div>
-                <div className="start-node"></div>
-              </div>
-            </FadeInElement>
-            <FadeInElement>
-              <div className="row">
-                <div className="col">
-                  <img
-                    className="experience-image"
-                    src={aviva}
-                    alt="Aviva Plc"
-                  />
-                </div>
-                <div className="col">
-                  <h3>ProductWriter Developer</h3>
-                  <h4>
-                    Aviva
-                    <span className="blue">Sep 2018 - Sep 2020</span>
-                  </h4>
-                  <p>
-                    Upon finishing my Master’s degree I gained a position as a
-                    developer at the insurance firm Aviva. The team I was part
-                    of is responsible for Aviva’s commercial rating algorithms,
-                    which manages both underwriting risk acceptance and the
-                    pricing of insurance policies. Whilst there I learnt the
-                    nuances of working within a global organisation, and gained
-                    experience with large-scale unit and integration testing. I
-                    left Aviva in September 2020 to pursue my PhD in Business
-                    &amp; Management.
-                  </p>
-                </div>
-              </div>
-            </FadeInElement>
-            <FadeInElement>
-              <div className="separator">
-                <div className="end-node"></div>
-                <div className="line"></div>
-                <div className="start-node"></div>
-              </div>
-            </FadeInElement>
-            <FadeInElement>
-              <div className="row">
-                <div className="col">
-                  <img
-                    className="experience-image"
-                    src={uea}
-                    alt="University of East Anglia"
-                  />
-                </div>
-                <div className="col">
-                  <h3>MSc - Knowledge Discovery and Datamining</h3>
-                  <h4>
-                    University of East Anglia
-                    <span className="blue">Sep 2017 - Sep 2018</span>
-                  </h4>
-                  <p>
-                    When I graduated from my undergraduate studies I wanted to
-                    learn more about the field of data science and so
-                    subsequently enrolled on the MSc Knowledge Discovery and
-                    Datamining course at the University of East Anglia. This
-                    course allowed me to learn fundamental data science
-                    principles and add further to my understanding of
-                    information science. I graduated from this programme with
-                    Merit.
-                  </p>
-                </div>
-              </div>
-            </FadeInElement>
-            <FadeInElement>
-              <div className="separator">
-                <div className="end-node"></div>
-                <div className="line"></div>
-                <div className="start-node"></div>
-              </div>
-            </FadeInElement>
-            <FadeInElement>
-              <div className="row">
-                <div className="col">
-                  <img
-                    className="experience-image"
-                    src={uea}
-                    alt="University of East Anglia"
-                  />
-                </div>
-                <div className="col">
-                  <h3>BSc - Business Information Systems</h3>
-                  <h4>
-                    University of East Anglia
-                    <span className="blue">Sep 2014 - Jul 2017</span>
-                  </h4>
-                  <p>
-                    My undergraduate course allowed me to pursue a degree that
-                    combined my interests in consumer behaviour and computer
-                    science. My studies gave me a comprehensive knowledge of
-                    both business processes and software engineering principles;
-                    of which there was a good mixture of theoretical and
-                    practical elements. I graduated from this course in July
-                    2017 with First Class Honours.
-                  </p>
-                </div>
-              </div>
-            </FadeInElement>
+              </FadeInElement>
+            )}
+
+            {(experienceFilter == "" || experienceFilter == "education") && (
+              <>
+                {experienceFilter !== "education" && (
+                  <FadeInElement>
+                    <div className="separator">
+                      <div className="end-node"></div>
+                      <div className="line"></div>
+                      <div className="start-node"></div>
+                    </div>
+                  </FadeInElement>
+                )}
+                <FadeInElement>
+                  <div className="row">
+                    <div className="col">
+                      <img
+                        className="experience-image"
+                        src={uea}
+                        alt="University of East Anglia"
+                      />
+                    </div>
+                    <div className="col">
+                      <h3>PhD - Business and Management</h3>
+                      <h4>
+                        University of East Anglia
+                        <span className="blue">Sep 2020 - Nov 2021</span>
+                      </h4>
+                      <p>
+                        In 2020, I began studying toward a PhD in Business &amp;
+                        Management at the University of East Anglia, with a
+                        focus on the applicaiton of big data for performance
+                        management in service organisations. Although I very
+                        much enjoyed my time here, I left in 2021 after deciding
+                        to continue the pursuit of a career in industry.
+                      </p>
+                    </div>
+                  </div>
+                </FadeInElement>
+              </>
+            )}
+
+            {(experienceFilter == "" || experienceFilter == "work") && (
+              <>
+                <FadeInElement>
+                  <div className="separator">
+                    <div className="end-node"></div>
+                    <div className="line"></div>
+                    <div className="start-node"></div>
+                  </div>
+                </FadeInElement>
+                <FadeInElement>
+                  <div className="row">
+                    <div className="col">
+                      <img
+                        className="experience-image"
+                        src={aviva}
+                        alt="Aviva Plc"
+                      />
+                    </div>
+                    <div className="col">
+                      <h3>ProductWriter Developer</h3>
+                      <h4>
+                        Aviva
+                        <span className="blue">Sep 2018 - Sep 2020</span>
+                      </h4>
+                      <p>
+                        Upon finishing my Master’s degree I gained a position as
+                        a developer at the insurance firm Aviva. The team I was
+                        part of is responsible for Aviva’s commercial rating
+                        algorithms, which manages both underwriting risk
+                        acceptance and the pricing of insurance policies. Whilst
+                        there I learnt the nuances of working within a global
+                        organisation, and gained experience with large-scale
+                        unit and integration testing. I left Aviva in September
+                        2020 to pursue my PhD in Business &amp; Management.
+                      </p>
+                    </div>
+                  </div>
+                </FadeInElement>
+              </>
+            )}
+
+            {(experienceFilter == "" || experienceFilter == "education") && (
+              <>
+                <FadeInElement>
+                  <div className="separator">
+                    <div className="end-node"></div>
+                    <div className="line"></div>
+                    <div className="start-node"></div>
+                  </div>
+                </FadeInElement>
+                <FadeInElement>
+                  <div className="row">
+                    <div className="col">
+                      <img
+                        className="experience-image"
+                        src={uea}
+                        alt="University of East Anglia"
+                      />
+                    </div>
+                    <div className="col">
+                      <h3>MSc - Knowledge Discovery and Datamining</h3>
+                      <h4>
+                        University of East Anglia
+                        <span className="blue">Sep 2017 - Sep 2018</span>
+                      </h4>
+                      <p>
+                        When I graduated from my undergraduate studies I wanted
+                        to learn more about the field of data science and so
+                        subsequently enrolled on the MSc Knowledge Discovery and
+                        Datamining course at the University of East Anglia. This
+                        course allowed me to learn fundamental data science
+                        principles and add further to my understanding of
+                        information science. I graduated from this programme
+                        with Merit.
+                      </p>
+                    </div>
+                  </div>
+                </FadeInElement>
+              </>
+            )}
+
+            {(experienceFilter == "" || experienceFilter == "education") && (
+              <>
+                <FadeInElement>
+                  <div className="separator">
+                    <div className="end-node"></div>
+                    <div className="line"></div>
+                    <div className="start-node"></div>
+                  </div>
+                </FadeInElement>
+                <FadeInElement>
+                  <div className="row">
+                    <div className="col">
+                      <img
+                        className="experience-image"
+                        src={uea}
+                        alt="University of East Anglia"
+                      />
+                    </div>
+                    <div className="col">
+                      <h3>BSc - Business Information Systems</h3>
+                      <h4>
+                        University of East Anglia
+                        <span className="blue">Sep 2014 - Jul 2017</span>
+                      </h4>
+                      <p>
+                        My undergraduate course allowed me to pursue a degree
+                        that combined my interests in consumer behaviour and
+                        computer science. My studies gave me a comprehensive
+                        knowledge of both business processes and software
+                        engineering principles; of which there was a good
+                        mixture of theoretical and practical elements. I
+                        graduated from this course in July 2017 with First Class
+                        Honours.
+                      </p>
+                    </div>
+                  </div>
+                </FadeInElement>
+              </>
+            )}
           </div>
         </>
       </Layout>

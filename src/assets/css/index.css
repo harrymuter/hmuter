@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap");
-
+.experience-filter {
+  padding: 0.6em;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 1.2em 0;
+}
+.experience-label {
+  display: none;
+  visibility: hidden;
+}
 .separator {
   width: 100%;
   display: flex;
@@ -7,13 +16,11 @@
   align-items: center;
   margin: 12px 0;
 }
-
 .line {
   background-color: var(--primary-color);
   width: 3px;
   height: 48px;
 }
-
 .start-node,
 .end-node {
   height: 18px;
@@ -21,7 +28,6 @@
   background-color: var(--primary-color);
   border-radius: 100%;
 }
-
 .start-node::after,
 .end-node::after {
   content: "";
