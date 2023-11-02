@@ -113,7 +113,6 @@ const AboutMe = () => {
                 folley,
                 mudder,
                 llama,
-                walking,
               ]}
             />
           </div>

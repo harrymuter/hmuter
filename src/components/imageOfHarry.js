@@ -30,7 +30,12 @@ const ImageOfHarry = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <Img
+      alt="Picture of handsome man named Harry Muter."
+      fluid={data.placeholderImage.childImageSharp.fluid}
+    />
+  )
 }
 
 export default ImageOfHarry

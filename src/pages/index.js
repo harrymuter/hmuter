@@ -12,8 +12,8 @@ import css from "../assets/images/css.svg"
 import js from "../assets/images/javascript.svg"
 import ts from "../assets/images/typescript.svg"
 import python from "../assets/images/python.svg"
-import react from "../assets/images/react.svg"
-import gatsby from "../assets/images/gatsby.svg"
+import reactImage from "../assets/images/react.svg"
+import gatsbyImage from "../assets/images/gatsby.svg"
 import wordpress from "../assets/images/wordpress.svg"
 import shopify from "../assets/images/shopify.svg"
 import aws from "../assets/images/aws.svg"
@@ -60,14 +60,16 @@ const Index = () => {
         <div className="intro-container">
           <div className="hero-container">
             <div className="hero-text">
-              <h1 className="hero-heading heading-large">Harry Muter.</h1>
+              <h1 className="hero-heading heading-large" tabIndex={0}>
+                Harry Muter.
+              </h1>
               <br />
               <h2 className="hero-heading heading-small">
                 I build websites and stuff.
               </h2>
             </div>
             <div className="hero-image-container">
-              <div className="hero-image">
+              <div className="hero-image" tabIndex={0}>
                 <ImageOfHarry />
               </div>
             </div>
@@ -169,146 +171,46 @@ const Index = () => {
                 </FadeInElement>
               </div>
               <div className="tools-grid">
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={html} alt="HTML" />
-                  </FadeInElement>
-                  <FadeInElement>HTML</FadeInElement>
-                </div>
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={css} alt="CSS" />
-                  </FadeInElement>
-                  <FadeInElement>CSS</FadeInElement>
-                </div>
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={js} alt="JavaScript" />
-                  </FadeInElement>
-                  <FadeInElement>JavaScript</FadeInElement>
-                </div>
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={ts} alt="TypeScript" />
-                  </FadeInElement>
-                  <FadeInElement>TypeScript</FadeInElement>
-                </div>
-
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={python} alt="Python" />
-                  </FadeInElement>
-                  <FadeInElement>Python</FadeInElement>
-                </div>
-
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={react} alt="React" />
-                  </FadeInElement>
-                  <FadeInElement>React</FadeInElement>
-                </div>
-
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={gatsby} alt="Gatsby" />
-                  </FadeInElement>
-                  <FadeInElement>Gatsby</FadeInElement>
-                </div>
-
-                <div className="tool">
-                  <FadeInElement>
-                    <img
-                      className="tool-image"
-                      src={wordpress}
-                      alt="Wordpress"
-                    />
-                  </FadeInElement>
-                  <FadeInElement>Wordpress</FadeInElement>
-                </div>
-
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={shopify} alt="Shopify" />
-                  </FadeInElement>
-                  <FadeInElement>Shopify</FadeInElement>
-                </div>
-
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={aws} alt="AWS" />
-                  </FadeInElement>
-                  <FadeInElement>AWS</FadeInElement>
-                </div>
-
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={netlify} alt="Netlify" />
-                  </FadeInElement>
-                  <FadeInElement>Netlify</FadeInElement>
-                </div>
-
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={stripe} alt="Stripe" />
-                  </FadeInElement>
-                  <FadeInElement>Stripe</FadeInElement>
-                </div>
-
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={strapi} alt="Strapi" />
-                  </FadeInElement>
-                  <FadeInElement>Strapi</FadeInElement>
-                </div>
-
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={mongodb} alt="Mongo DB" />
-                  </FadeInElement>
-                  <FadeInElement>MongoDB</FadeInElement>
-                </div>
-
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={mysql} alt="MySQL" />
-                  </FadeInElement>
-                  <FadeInElement>MySQL</FadeInElement>
-                </div>
-
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={jira} alt="Jira" />
-                  </FadeInElement>
-                  <FadeInElement>Jira</FadeInElement>
-                </div>
-
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={figma} alt="Figma" />
-                  </FadeInElement>
-                  <FadeInElement>Figma</FadeInElement>
-                </div>
-
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={ai} alt="AI" />
-                  </FadeInElement>
-                  <FadeInElement>AI</FadeInElement>
-                </div>
-
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={git} alt="Git" />
-                  </FadeInElement>
-                  <FadeInElement>Git</FadeInElement>
-                </div>
-
-                <div className="tool">
-                  <FadeInElement>
-                    <img className="tool-image" src={trello} alt="Trello" />
-                  </FadeInElement>
-                  <FadeInElement>Trello</FadeInElement>
-                </div>
+                {[
+                  { toolName: "HTML", toolLink: "", toolImage: html },
+                  { toolName: "CSS", toolLink: "", toolImage: css },
+                  { toolName: "JavaScript", toolLink: "", toolImage: js },
+                  { toolName: "TypeScript", toolLink: "", toolImage: ts },
+                  { toolName: "Python", toolLink: "", toolImage: python },
+                  { toolName: "React", toolLink: "", toolImage: reactImage },
+                  { toolName: "Gatsby", toolLink: "", toolImage: gatsbyImage },
+                  { toolName: "Wordpress", toolLink: "", toolImage: wordpress },
+                  { toolName: "Shopify", toolLink: "", toolImage: shopify },
+                  { toolName: "AWS", toolLink: "", toolImage: aws },
+                  { toolName: "Netlify", toolLink: "", toolImage: netlify },
+                  { toolName: "Stripe", toolLink: "", toolImage: stripe },
+                  { toolName: "Strapi", toolLink: "", toolImage: strapi },
+                  { toolName: "MongoDB", toolLink: "", toolImage: mongodb },
+                  { toolName: "MySQL", toolLink: "", toolImage: mysql },
+                  { toolName: "Jira", toolLink: "", toolImage: jira },
+                  { toolName: "Figma", toolLink: "", toolImage: figma },
+                  { toolName: "Ai", toolLink: "", toolImage: ai },
+                  { toolName: "Git", toolLink: "", toolImage: git },
+                  { toolName: "Trell", toolLink: "", toolImage: trello },
+                ].map(tool => (
+                  <div className="tool">
+                    <FadeInElement>
+                      <a
+                        href={tool.toolLink}
+                        //"https://www.netlify.com/"
+                        alt={tool.toolName}
+                        tabIndex={0}
+                      >
+                        <img
+                          className="tool-image"
+                          src={tool.toolImage}
+                          alt={tool.toolName}
+                        />
+                      </a>
+                    </FadeInElement>
+                    <FadeInElement>{tool.toolName}</FadeInElement>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -332,7 +234,7 @@ const Index = () => {
               </select>
             </FadeInElement>
 
-            {(experienceFilter == "" || experienceFilter == "work") && (
+            {(experienceFilter === "" || experienceFilter === "work") && (
               <FadeInElement>
                 <div className="row">
                   <div className="col">
@@ -364,7 +266,7 @@ const Index = () => {
               </FadeInElement>
             )}
 
-            {(experienceFilter == "" || experienceFilter == "education") && (
+            {(experienceFilter === "" || experienceFilter === "education") && (
               <>
                 {experienceFilter !== "education" && (
                   <FadeInElement>
@@ -404,7 +306,7 @@ const Index = () => {
               </>
             )}
 
-            {(experienceFilter == "" || experienceFilter == "work") && (
+            {(experienceFilter === "" || experienceFilter === "work") && (
               <>
                 <FadeInElement>
                   <div className="separator">
@@ -445,7 +347,7 @@ const Index = () => {
               </>
             )}
 
-            {(experienceFilter == "" || experienceFilter == "education") && (
+            {(experienceFilter === "" || experienceFilter === "education") && (
               <>
                 <FadeInElement>
                   <div className="separator">
@@ -485,7 +387,7 @@ const Index = () => {
               </>
             )}
 
-            {(experienceFilter == "" || experienceFilter == "education") && (
+            {(experienceFilter === "" || experienceFilter === "education") && (
               <>
                 <FadeInElement>
                   <div className="separator">

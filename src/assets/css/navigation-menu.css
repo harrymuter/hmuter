@@ -1,5 +1,14 @@
+:root {
+  --primary-color: #041c32;
+  --secondary-color: #04293a;
+  --tertiary-color: #064663;
+  --off-white: #e5e5e5;
+  --light-color: #ecb365;
+}
+
 .navbar {
   background-color: var(--primary-color);
+  margin: -1px 0;
 }
 
 .navigation-inner {
@@ -7,14 +16,12 @@
   max-width: 1300px;
   padding: 1em;
   display: flex;
+  visibility: visible;
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
   flex-basis: auto;
   flex-wrap: wrap;
-}
-.nav-link {
-  position: relative;
 }
 .nav-link:hover {
   color: #bbbbbb;
@@ -46,7 +53,6 @@
   -ms-transition: all 1.5s ease-in;
   transition: all 1.5s ease-in;
 }
-
 .menu-branding-loaded::after {
   opacity: 1;
   left: -65px;
@@ -56,7 +62,6 @@
   -ms-transition: all 1.5s ease-in;
   transition: all 1.5s ease-in;
 }
-
 .nav-link:after {
   content: "";
   color: #bbbbbb;
@@ -64,13 +69,13 @@
   width: 0;
   height: 2px;
   display: block;
-  margin-top: 5px;
+  visibility: visible;
+  bottom: -5px;
   right: 0;
   background: #ffffff;
   transition: width 0.4s ease;
   -webkit-transition: width 0.4s ease;
 }
-
 .nav-link:hover:after {
   width: 100%;
   color: #bbbbbb;
@@ -80,6 +85,7 @@
 
 .nav-item {
   display: flex;
+  visibility: visible;
   padding: 1em;
 }
 
@@ -100,55 +106,38 @@
 }
 .nav-items {
   display: flex;
+  visibility: visible;
   flex-direction: row;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
   transition: max-height 0.3s ease-out;
 }
 
 .menu-toggle {
   display: none;
-}
-
-/* MOBILE */
-@media only screen and (max-width: 800px) {
-  .menu-toggle {
-    display: flex;
-    align-items: center;
-  }
-  .nav-items {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    max-height: 0;
-    flex-basis: 100%;
-    /* display: none; */
-  }
-  .nav-items.open {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    overflow: hidden;
-    /* display: visible; */
-    max-height: 100vh;
-    transition: max-height 0.3s ease-out;
-  }
+  visibility: hidden;
 }
 
 .menu-branding,
 .menu-branding-loaded {
   display: flex;
+  visibility: visible;
   align-items: center;
   z-index: 2;
 }
 
 .nav-link {
+  -webkit-tap-highlight-color: transparent;
   font-weight: lighter;
   font-size: 1em;
   text-decoration: none;
   color: #bcbcbc;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 16px 1em 16px;
 }
 
 .nav-link.active {
@@ -160,11 +149,11 @@
 }
 
 .dropdown-content {
-  margin: 5%;
-  position: relative;
-  background-color: #fff;
+  position: absolute;
+  top: 80px;
   box-shadow: none;
   z-index: 1;
+  background-color: var(--primary-color);
 }
 
 /* Icon 1 */
@@ -191,6 +180,7 @@
 .animated-icon1 span,
 .animated-icon3 span {
   display: block;
+  visibility: visible;
   position: absolute;
   height: 3px;
   width: 100%;
@@ -209,6 +199,7 @@
 
 .animated-icon2 span {
   display: block;
+  visibility: visible;
   position: absolute;
   height: 3px;
   width: 100%;
@@ -370,4 +361,73 @@
 
 .strike {
   text-decoration: line-through;
+}
+
+.chevron {
+  width: 8px;
+  height: 8px;
+  display: flex;
+  margin: auto 6px;
+}
+.chevron::before {
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  content: "";
+  height: 6px;
+  position: relative;
+  transform: rotate(-45deg);
+  transition: 0.5s ease-in-out;
+  width: 6px;
+}
+.chevron.bottom:before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.chevron.right:before {
+  left: 0;
+  transform: rotate(45deg);
+}
+
+/* MOBILE STYLING (SCREENS NARROWER THAN 800px) */
+@media only screen and (max-width: 800px) {
+  .menu-toggle {
+    display: flex;
+    visibility: visible;
+    align-items: center;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .nav-items {
+    display: none;
+    visibility: hidden;
+    flex-direction: column;
+    margin: auto;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    flex-basis: 100%;
+  }
+  .nav-items.open {
+    display: flex;
+    visibility: visible;
+    overflow: hidden;
+    max-height: 100vh;
+    transition: max-height 0.3s ease-out;
+  }
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropdown-content {
+    position: initial;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    z-index: 1;
+    margin: 1em 0 1em 0;
+    width: 100%;
+  }
 }
